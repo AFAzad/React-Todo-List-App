@@ -1,0 +1,25 @@
+
+.main-row {
+  height: 100vh;
+}
+
+
+.main-col {
+  max-width: 500px;
+  min-height: 300px;
+
+}
+
+.todo-done{
+  text-decoration: line-through;
+}
+.text-center{
+  color: #fff;
+}
+.remove-item{
+  /* box-sizing: border-box; */
+  border-radius: 4px;
+}
+
+
+
