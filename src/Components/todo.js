@@ -3,7 +3,7 @@ import ShowTodo from './ShowTodo'
 import './Todo.css'
 function Todo() {
 
-    const [task, setTask] = useState("add some task")
+    const [task, setTask] = useState("")
     const [data, setData] = useState([])
 
     const onChangeHandler = (e) => {
@@ -37,7 +37,7 @@ function Todo() {
                     <form onSubmit={submitHandler}>
                         <div className="row justify-content-between text-white p-2">
                             <div className="form-group flex-fill mb-2 col-9">
-                                <input id="todo-input" type="text" className="form-control" value={task} onChange={onChangeHandler} />
+                                <input placeholder='Add your task' id="todo-input" type="text" className="form-control" value={task} onChange={onChangeHandler} />
                             </div>
                             <button type="submit" className="btn btn-primary mb-2 ml-2 col-3">Add todo</button>
                         </div>
